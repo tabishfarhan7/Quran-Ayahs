@@ -117,14 +117,6 @@ window.addEventListener('load', () => {
   //not useful //
 
 
-  // Utility function to shuffle an array (not used in main functionality)
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-}
-
 // Example of an unused event listener
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Website loaded successfully!");
@@ -136,10 +128,6 @@ function checkOnlineStatus() {
 }
 
 // Hidden Easter egg function (not triggered anywhere)
-function easterEgg() {
-    console.log("You've found the hidden message! 🎉");
-}
-
 // Simple unused function to format text
 function formatText(text) {
     return text.trim().toUpperCase();
@@ -149,14 +137,6 @@ function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// Unused function to check if a number is prime
-function isPrime(num) {
-    if (num < 2) return false;
-    for (let i = 2; i <= Math.sqrt(num); i++) {
-        if (num % i === 0) return false;
-    }
-    return true;
-}
 
 // Add a secret keyboard shortcut (not activated)
 document.addEventListener("keydown", (event) => {
@@ -181,16 +161,5 @@ async function delay(ms) {
 }
 
 // Random fun fact (not displayed anywhere)
-const funFacts = [
-    "The heart of a shrimp is located in its head.",
-    "Honey never spoils.",
-    "Bananas are berries, but strawberries are not.",
-    "There’s no sound in space.",
-    "Octopuses have three hearts."
-];
-
-function getRandomFact() {
-    return funFacts[Math.floor(Math.random() * funFacts.length)];
-}
 
 });
