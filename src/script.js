@@ -111,4 +111,86 @@ window.addEventListener('load', () => {
     audio.play();
   });
   loadQuotes();
+
+
+
+  //not useful //
+
+
+  // Utility function to shuffle an array (not used in main functionality)
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+// Example of an unused event listener
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Website loaded successfully!");
+});
+
+// A simple function to check if the user is online (not used anywhere)
+function checkOnlineStatus() {
+    return navigator.onLine ? "Online" : "Offline";
+}
+
+// Hidden Easter egg function (not triggered anywhere)
+function easterEgg() {
+    console.log("You've found the hidden message! 🎉");
+}
+
+// Simple unused function to format text
+function formatText(text) {
+    return text.trim().toUpperCase();
+}
+// Generate a random number between a given range (unused)
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// Unused function to check if a number is prime
+function isPrime(num) {
+    if (num < 2) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+
+// Add a secret keyboard shortcut (not activated)
+document.addEventListener("keydown", (event) => {
+    if (event.ctrlKey && event.key === "q") {
+        console.log("Secret shortcut activated! 🔥");
+    }
+});
+
+// Function to get current time (not used)
+function getCurrentTime() {
+    return new Date().toLocaleTimeString();
+}
+
+// Simple unused localStorage test
+function saveToLocalStorage() {
+    localStorage.setItem("testKey", "Hello, World!");
+}
+
+// Unused function to simulate a delay (good for testing async behavior)
+async function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+// Random fun fact (not displayed anywhere)
+const funFacts = [
+    "The heart of a shrimp is located in its head.",
+    "Honey never spoils.",
+    "Bananas are berries, but strawberries are not.",
+    "There’s no sound in space.",
+    "Octopuses have three hearts."
+];
+
+function getRandomFact() {
+    return funFacts[Math.floor(Math.random() * funFacts.length)];
+}
+
 });
