@@ -2,7 +2,7 @@ const quotes = [];
 let currentQuote = {};
 let audio = null;
 let isMuted = true;
-let appURL = "https://mgks.github.io/zen";
+let appURL = "https://quranic-wisdom.vercel.app/";
 
 // load quotes from JSON
 async function loadQuotes() {
